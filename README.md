@@ -1,0 +1,1 @@
+# palestraAlgoritmi2022
