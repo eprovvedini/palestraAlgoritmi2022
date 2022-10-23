@@ -2,6 +2,13 @@
 
 ## Link utili
 - Allenamenti
-  - fdsjkfjk
+  - OII
+  - Kattis
+  - HackerRank
 - Materiali
-  - fdsfds
+  - Sito Montresor
+  - Guida Bugatti
+
+## Contatti
+Elisabetta Provvedini
+- Mail: e.provvedini@studenti.unitn.it
