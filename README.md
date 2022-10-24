@@ -2,7 +2,7 @@
 
 ## Link utili
 - Allenamenti
-  - OII
+  - [OII](https://training.olinfo.it/#/overview)
   - Kattis
   - HackerRank
 - Materiali
