@@ -34,19 +34,33 @@ Nel seguente esempio la variabile x contiene prima 2 e poi 4, come si può veder
 using namespace std;
 
 int main() {
-    int a = 5;
-    double b = 3.5;
-    float c = 7.2;
-    char d = 'a';
-    bool e = false;
-    
-    cout << a << " " << b << " " << c << " " << d;
+    int a = 2;
+    cout << a << "\n";
+    a = 4;
+    cout << a << "\n";
 
     return 0;
 }
 ```
 
 Ci sono 4 tipi principali di variabili.
+
+```C++
+#include<iostream>
+using namespace std;
+
+int main() {
+    int a = 2;
+    float b = 3.5;
+    double c = 4.4;
+    char d = 'a';
+    bool e = false;
+    
+    cout << a << " " << b << " " << c << " " << d << " " << e << "\n";
+
+    return 0;
+}
+```
 
 ### Numeri interi
 Usiamo il tipo int.
