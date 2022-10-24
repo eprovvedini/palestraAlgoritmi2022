@@ -10,7 +10,7 @@ Quando create un nuovo file ricordate di salvarlo con estensione .cpp (altriment
 
 ### Hello world
 
-```C
+```C++
 int main(){
   cout << "Hello World";
  }
