@@ -116,7 +116,33 @@ int main() {
 ```
 
 ## Decisioni: costrutto if-else
-CODICE
+A volte vogliamo che il nostro codice faccia cose diverse a seconda di una condizione.
+Ad esempio vogliamo scrivere a video "pari" se un numero è pari o dispari altrimenti.
+
+#include<iostream>
+using namespace std;
+```C++
+if(CONDIZIONE){
+  //Esegui il codice in questo blocco se la condizione è vera
+}else{
+  //Esegui il codice in questo blocco se la condizione è falsa
+}
+```
+Nel nostro caso:
+```C++
+  #include<iostream>
+using namespace std;
+
+int main() {
+    int a = 2;
+    if(a%2 == 0){
+        cout << "pari";
+    }else{
+        cout << "dispari";
+    }
+    return 0;
+}
+```
 
 ## Switch
 
