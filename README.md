@@ -3,11 +3,9 @@
 ## Link utili
 - Allenamenti
   - [OII](https://training.olinfo.it/#/overview)
-  - Kattis
-  - HackerRank
 - Materiali
-  - Sito Montresor
-  - Guida Bugatti
+  - [Sito Prof. Montresor](https://cricca.disi.unitn.it/montresor/teaching/asd/)
+  - [Guida OII Prof. Bugatti](http://www.imparando.net/sito/olimpiadi_di_informatica/guida_sesta_edizione.pdf)
 
 ## Contatti
 Elisabetta Provvedini
