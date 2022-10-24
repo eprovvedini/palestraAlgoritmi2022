@@ -130,7 +130,7 @@ if(CONDIZIONE){
 ```
 Nel nostro caso:
 ```C++
-  #include<iostream>
+#include<iostream>
 using namespace std;
 
 int main() {
@@ -139,6 +139,52 @@ int main() {
         cout << "pari";
     }else{
         cout << "dispari";
+    }
+    return 0;
+}
+```
+
+Un if può avere più else, con diverse condizioni.
+```C++
+#include<iostream>
+using namespace std;
+
+int main() {
+    int a = 2;
+    if(a>0){
+        cout << "positivo";
+    }else if (a==0){
+        cout << "zero";
+    } else {
+        cout << "negativo";
+    }
+    return 0;
+}
+```
+ 
+NB: gli operatori di confronto in c++ sono < (minore), > (maggiore), <= (minore o uguale), >= (maggiore o uguale), == (uguale), != (diverso)
+  
+Possiamo anche avere più if-else annidati tra loro:
+```C++
+#include <iostream>
+using namespace std;
+  
+int main() {
+    int A = 2;
+    int B = 3;
+    int C = 4;
+    if(A>B){
+        if(A>C){
+            cout << "A è il massimo";
+        } else {
+            cout << "C è il massimo";
+        }
+    }else {
+        if(B>C){
+            cout << "B è il maggiore";
+        } else {
+            cout << "C è il maggiore";
+        }
     }
     return 0;
 }
