@@ -256,7 +256,7 @@ L'istruzione cin >> A legge il valore inserito dall'utente e lo salva nella vari
 - Per andare a capo quando stampate, usate cout << "\n". cout << endl può rendere il programma più lento
 
 ### Input e output su/da file
-```
+```C++
 #include<fstream>
 using namespace std;
 
