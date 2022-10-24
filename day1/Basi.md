@@ -10,7 +10,11 @@ Quando create un nuovo file ricordate di salvarlo con estensione .cpp (altriment
 
 ### Hello world
 
-CODICE
+```
+int main(){
+  cout << "Hello World";
+ }
+```
 
 Note:
 - la libreria <bits/stdc++.h> contiene tutte le librerie standard del C++. Solitamente non si usa, ma in contesti competitivi è molto utile dato che non dovete perdere tempo a includere ogni libreria che vi serve
