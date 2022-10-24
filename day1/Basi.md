@@ -97,6 +97,7 @@ NB: il programma considera false il numero 0 e true ogni altro numero
 TABELLA
 
 ## Operazioni con le variabili
+
 ```C++
 #include<iostream>
 using namespace std;
@@ -119,9 +120,10 @@ int main() {
 A volte vogliamo che il nostro codice faccia cose diverse a seconda di una condizione.
 Ad esempio vogliamo scrivere a video "pari" se un numero è pari o dispari altrimenti.
 
+```C++
 #include<iostream>
 using namespace std;
-```C++
+  
 if(CONDIZIONE){
   //Esegui il codice in questo blocco se la condizione è vera
 }else{
@@ -155,7 +157,7 @@ int main() {
         cout << "positivo";
     }else if (a==0){
         cout << "zero";
-    } else {
+    }else {
         cout << "negativo";
     }
     return 0;
@@ -191,6 +193,48 @@ int main() {
 ```
 
 ## Switch
+Lo switch si usa per eseguire diverse istruzioni a seconda del valore di un'istruzione.
+É un metodo più elegante di scrivere una sequenza di if.
+
+Con l'if:
+```C++
+if(espressione == valore costante 1){
+  //istruzioni1
+} else if(espressione == valore costante 2){
+  //istruzioni2
+} else if(espressione == valore costante 3){
+  //istruzioni3
+} ...
+```
+Con lo switch
+```C++
+switch(espressione) { 
+case (valore costante 1): 
+    istruzioni1;
+    break; 
+case (valore costante 2):
+    istruzioni2;
+    break;  
+...
+default:    // è opzionale, viene eseguito se l'espressione non corrisponde a nessuno dei valori elencati
+    istruzioni default;
+ } 
+```
+Esempio pratico:
+```C++
+int giorno = 3;
+switch(giorno) { 
+case (1): 
+    cout << "lunedì";
+    break; 
+case (2):
+    cout << "martedi";
+    break;  
+...
+default:
+    cout << "giorno non valido";
+ } 
+```
 
 ## Input e output
 ### Input e output su/da file
