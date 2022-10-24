@@ -11,8 +11,12 @@ Quando create un nuovo file ricordate di salvarlo con estensione .cpp (altriment
 ### Hello world
 
 ```C++
+#include<fstream>
+using namespace std;
+
 int main(){
   cout << "Hello World";
+  return 0;
  }
 ```
 
@@ -25,26 +29,77 @@ Le variabili sono contenitori di valori, che possono cambiare durante il program
 Stampando una variabile si può vedere cosa contiene in quel momento.
 Nel seguente esempio la variabile x contiene prima 2 e poi 4, come si può vedere stampandola.
 
-CODICE
+```C++
+#include<iostream>
+using namespace std;
+
+int main() {
+    int a = 5;
+    double b = 3.5;
+    float c = 7.2;
+    char d = 'a';
+    bool e = false;
+    
+    cout << a << " " << b << " " << c << " " << d;
+
+    return 0;
+}
+```
 
 Ci sono 4 tipi principali di variabili.
 
-### int
+### Numeri interi
+Usiamo il tipo int.
 Contiene valori interi, ad esempio 1, 2, -1, 27, ...
 
-### float
+### Numeri decimali
+Possiamo usare il tipo float e il tipo double.
+Double ha precisione doppia rispetto a float (può contentere numeri più lunghi).
 
-### char
+### Caratteri
+Usiamo il tipo char.
+I caratteri vengono scritti tra apici singoli.
+```C++
+char c = 'a';
+```
+A ogni carattere corrisponde un numero, secondo la tabella ASCII.
+Scrivere
+```C++
+char c = 'a';
+```
+o
+```C++
+char c = 45;
+```
+è equivalente.
 
-### bool
-Può essere true o false.
+TABELLA ASCII
+
+### Valori di verità
+Usiamo il tipo bool, che può avere solo due valori: true o false.
 NB: il programma considera false il numero 0 e true ogni altro numero
 
 ### Tabella dei tipi di dato primitivi
 TABELLA
 
 ## Operazioni con le variabili
+```C++
+#include<iostream>
+using namespace std;
 
+int main() {
+    int a = 3, b = 2;
+    int somma = a+b;
+    int differenza = a-b;
+    int prodotto = a*b;
+    int rapporto = a/b;
+    int resto = a%b;
+
+    cout << somma << " " << differenza << " " << prodotto << " " << rapporto << " " << resto;
+    
+    return 0;
+}
+```
 
 ## Decisioni: costrutto if-else
 CODICE
