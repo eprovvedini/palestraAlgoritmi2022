@@ -80,7 +80,7 @@ cout << "fine";
 ## Esercizi
 
 1. Scrivere un programma che stampi i numeri da 100 a 1 inclusi
-2. Scrivere un programma che dica se un numero inserito da tastiera è primo (un numero è primo se è divisibile solo per sè stesso e 1. Approfondimento ![qui](https://it.wikipedia.org/wiki/Numero_primo).
+2. Scrivere un programma che dica se un numero inserito da tastiera è primo (un numero è primo se è divisibile solo per sè stesso e 1. Approfondimento [qui](https://it.wikipedia.org/wiki/Numero_primo).
 3. Scrivere un programma che dica quanti divisori ha un numero inserito da tastiera
 4. Scrivere un programma che stampi la somma di tutti i numeri da 1 a N, N inserito da tastiera
 5. Scrivere un programma che legga un intero N e N numeri interi e ne stampi la somma
