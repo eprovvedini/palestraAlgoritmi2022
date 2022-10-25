@@ -93,7 +93,7 @@ Usiamo il tipo bool, che può avere solo due valori: true o false.
 NB: il programma considera false il numero 0 e true ogni altro numero
 
 ### Tabella dei tipi di dato primitivi
-TABELLA
+[Tabella](https://www.codeguru.com/wp-content/uploads/2021/09/C-data-types.png)
 
 ## Operazioni con le variabili
 
