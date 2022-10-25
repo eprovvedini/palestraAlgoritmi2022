@@ -11,7 +11,7 @@ Quando create un nuovo file ricordate di salvarlo con estensione .cpp (altriment
 ### Hello world
 
 ```C++
-#include<iotream>
+#include<iostream>
 using namespace std;
 
 int main(){
