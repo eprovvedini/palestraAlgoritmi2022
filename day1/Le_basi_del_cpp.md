@@ -86,7 +86,7 @@ char c = 45;
 ```
 è equivalente.
 
-[Tabella ASCII](day1/asciiTable.svg)
+[Tabella ASCII](https://commons.wikimedia.org/wiki/File:ASCII-Table.svg)
 
 ### Valori di verità
 Usiamo il tipo bool, che può avere solo due valori: true o false.
