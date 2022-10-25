@@ -281,12 +281,11 @@ Note:
 - se il file di output non esiste, il programma lo creerà in automatico
 
 ## Esercizi
-Esercizi molto semplici su questi argomenti.
-Potete usarli se siete ancora insicuri sulle basi o come ripasso.
 
 1) Scrivere un programma che dati in input base e altezza di un rettangolo, calcoli e stampi l'area e il perimetro.
-2) Riscrivere lo stesso programma, ma prendendo i dati in input da un file "input.txt" e scrivendo i risultati su un file "output.txt"
-3) Scrivere un programma che inseriti N=5 numeri, ne stampi la somma
+2) Scrivere un programma che chieda all'utente 5 numeri, e ne stampi la somma
+3) Scrivere un programma che inseriti N=5 numeri, dica quanti sono divisibili per 3
 4) Scrivere un programma che inserito un numero di 4 cifre, stampi le migliaia, le centinaia, le decine e le unità dalle quali è composto. (E volendo stampi la somma delle cifre del numero).
-5) Scrivere un programma che inseriti N=5 numeri, dica quanti sono divisibili per 3
+5) Scriva un programma che dica qual è il numero maggiore tra 3 numeri inseriti dall'utente
 6) Scrivere un programma che dati due interi A e B ed un'operazione (quindi un simbolo tra +, -, * ,/) stampi a video il risultato dell'operazione (A+B oppure A-B eccetera)
+7) Riscrivere l'esercizio 1, ma prendendo i dati in input da un file "input.txt" e salvando il risultato su un file "output.txt"
