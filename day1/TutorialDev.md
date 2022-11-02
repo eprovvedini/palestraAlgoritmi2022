@@ -5,6 +5,7 @@
 ![devCreareFile](https://user-images.githubusercontent.com/94620199/199555499-06ab958b-3d0d-48c6-8afa-53595f9837e4.png)
 
 Ricordate che quando salverete il vostro file, dovete salvarlo con estensione .cpp
+
 Per esempio se volete chiamare il file "mioFile", dovrete salvarlo con "mioFile.cpp"
 
 Così:
@@ -17,7 +18,9 @@ Così:
 ![finestraPrincipale](https://user-images.githubusercontent.com/94620199/199556388-1fc2d924-829f-48d3-a4e9-240e8bfd97b3.png)
 
 Una volta creato il nuovo file, potrete scrivere il vostro codice nella finestra principale.
+
 Queste sono le cose che non devono mai mancare nel vostro codice.
+
 Dovrete poi scrivere all'interno del main, prima del return 0.
 
 ## Compilare ed eseguire
