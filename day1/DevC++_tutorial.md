@@ -8,6 +8,8 @@ Ricordate che quando salverete il vostro file, dovete salvarlo con estensione .c
 Per esempio se volete chiamare il file "mioFile", dovrete salvarlo con "mioFile.cpp"
 
 Così:
+
+
 ![salvareFile](https://user-images.githubusercontent.com/94620199/199556264-fe1131b7-6eb2-4937-addb-6266be730f73.png)
 
 ## Scrivere codice
