@@ -25,6 +25,9 @@ Dovrete poi scrivere all'interno del main, prima del return 0.
 ![pulsanti](https://user-images.githubusercontent.com/94620199/199557272-cfcab1fe-d5a5-4630-bfcf-9c0eefd85281.png)
 
 Una volta che avete finito di scrivere il codice, dovete compilarlo, poi potete eseguirlo.
+
 Se cambiate qualcosa al vostro codice, bisogna compilarlo di nuovo, prima di eseguirlo, altrimenti si comporterà ancora come il codice vecchio (un po' come se non aveste salvato).
+
 Se siete in dubbio usate "compila ed esegui".
+
 L'ultimo pulsante serve nel caso vogliate compilare tutti i file di un progetto, ma non ci servirà.
