@@ -6,6 +6,8 @@ Consiglio CodeBlocks, dato che è utilizzato anche durante le olimpiadi di infor
 Potete scaricarlo [qui](https://www.codeblocks.org/downloads/binaries/)
 Altre opzioni sono DevC++ o VisualStudio.
 
+Se non ricordate come usare DevC++, nella cartella "day1" ho messo un breve tutorial.
+
 Quando create un nuovo file ricordate di salvarlo con estensione .cpp (altrimenti verrà salvato come file in C).
 
 ### Hello world
