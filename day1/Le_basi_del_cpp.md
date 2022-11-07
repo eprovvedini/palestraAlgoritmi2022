@@ -22,11 +22,25 @@ int main(){
  }
 ```
 
+Questa è la struttura base di un programma in c++.
+Tutto il vostro codice deve essere all'interno del main. Alla fine del main serve il return 0. Il return 0 dice al programma di "ritornare" 0. Lo mettiamo alla fine del main: in questo modo se il nostro programma ritorna 0, significa che è arrivato fino a return 0 senza problemi, altrimenti qualcosa è andato storto.
+
+using namespace std va messo sempre.
+
+include iostream è l'inclusione della libreria iostream. Molti dei comandi che usiamo nel c++ sono funzioni, in questo caso per esempio "cout", serve per stampare a schermo, in questo caso "Hello World". cout è incluso nella libreria iostream. Se non aveste incluso iostream, cout non funzionerebbe.
+Per informazioni in più sul cout vedi il capitolo su input e output.
+
 Nota
-- la libreria <bits/stdc++.h> contiene tutte le librerie standard del C++. Solitamente non si usa, ma in contesti competitivi è molto utile dato che non dovete perdere tempo a includere ogni libreria che vi serve
+- la libreria <bits/stdc++.h> contiene tutte le librerie standard del C++. Solitamente non si usa, ma in contesti competitivi è molto utile dato che non dovete perdere tempo a includere ogni libreria che vi serve, quindi vi consliglio di fare include <bits/stdc++.h>
 
 ## Variabili
 Le variabili sono contenitori di valori, che possono cambiare durante il programma.
+Ogni variabile pu avere un tipo, spiegati nel dettaglio più avanti. In questo caso usiamo il tipo int, che può contenere numeri interi positivi e negativi.
+
+Una variabile va dichiarata prima di essere usata.
+Per dichiarare la variabile scriviamo "tipo" "nome_variabile", ad esempio int a.
+Possiamo assegnare un valore alla variabile con l'operatore "=". Possiamo farlo dopo averla dichiarata o mentre la stiamo dichiarando.
+
 Stampando una variabile si può vedere cosa contiene in quel momento.
 Nel seguente esempio la variabile x contiene prima 2 e poi 4, come si può vedere stampandola.
 
@@ -35,10 +49,10 @@ Nel seguente esempio la variabile x contiene prima 2 e poi 4, come si può veder
 using namespace std;
 
 int main() {
-    int a = 2;
-    cout << a << "\n";
-    a = 4;
-    cout << a << "\n";
+    int a = 2; //dichiaro la variabile a, di tipo int, e le assegno il valore 2
+    cout << a << "\n"; //questa riga stampa 2
+    a = 4; //cambio il valore della variabile a in 4
+    cout << a << "\n"; //questa riga stampa 4
 
     return 0;
 }
@@ -105,17 +119,41 @@ using namespace std;
 
 int main() {
     int a = 3, b = 2;
-    int somma = a+b;
-    int differenza = a-b;
-    int prodotto = a*b;
-    int rapporto = a/b;
-    int resto = a%b;
+    int somma = a+b; //somma di a e b (quindi 5)
+    int differenza = a-b; //differenza di a e b (quindi 1)
+    int prodotto = a*b; //prodotto di a e b (quindi 6)
+    int rapporto = a/b; //divisione di a e b (quindi 1)
+    int resto = a%b; //resto della divisione tra a e b (quindi 1)
 
     cout << somma << " " << differenza << " " << prodotto << " " << rapporto << " " << resto;
     
     return 0;
 }
 ```
+
+Nota sulla divisione
+- Se divido due interi, il risultato sarà sempre un intero, anche se lo salvo in un float
+```C++
+int a = 5;
+int b = 2;
+float c = a/b; //c è uguale a 2
+```
+
+- Se divido due float (o un float e un int) il risultato sarà un float, ma se lo salvo in un int, la parte con la virgola verrà troncata
+```C++
+float a = 5;
+float b = 2;
+float c = a/b; //c è uguale a 2,5
+int d = a/b; //d è uguale a 2
+```
+
+- E se voglio dividere due interi ma voglio che il risultato sia con la virgola???
+```C++
+int a = 5;
+int b = 2;
+float c = (float)a/b; //c è uguale a 2,5
+```
+Questa operazione si chiama "cast". Il compilatore sa che deve trattare la variabile a come se fosse un float, quindi siamo nel caso di un float(a) e un int(b).
 
 ## Decisioni: costrutto if-else
 A volte vogliamo che il nostro codice faccia cose diverse a seconda di una condizione.
@@ -164,9 +202,7 @@ int main() {
     return 0;
 }
 ```
- 
-NB: gli operatori di confronto in c++ sono < (minore), > (maggiore), <= (minore o uguale), >= (maggiore o uguale), == (uguale), != (diverso)
-  
+
 Possiamo anche avere più if-else annidati tra loro:
 ```C++
 #include <iostream>
@@ -192,6 +228,22 @@ int main() {
     return 0;
 }
 ```
+
+### Operatori di confronto
+Gli operatori di confronto in c++ sono < (minore), > (maggiore), <= (minore o uguale), >= (maggiore o uguale), == (uguale), != (diverso)
+Possiamo scrivere delle condizioni con questi operatori, ad esempio a==b sarà vero se le variabili a e b hanno lo stesso valore, falso altrimenti.
+Possiamo scrivere anche condizioni più complesse, come a+b==5, che sarà vero se la somma di a e b è uguale a 5.
+
+### Operatori logici
+A volte vogliamo unire più condizioni.
+Per esempio vogliamo che il programma vada nell'else se sono vere due condizioni, oppure se almeno una delle due è vera.
+Questo si fa con gli operatori logici, che sono 3 in c++:
+- Not. Il not si usa quando vogliamo negare una condizione. Il simbolo è ! e va messo davanti alla condizione da negare.
+	Ad esempio "!a==3" è vero se a è diverso da 3 e falso se a è uguale a 3
+- And. L'and si usa quando vogliamo che una condizione sia vera solo se le condizioni che la formano sono vere. Il simbolo è &&.
+	Ad esempio "a==3 && b==4" è vera solo se a è uguale a 3 E b è uguale a 4. Se anche solo una delle due condizioni non è verificata, il tutto è falso.
+- Or. L'or si usa quando vogliamo che una condizione sia vera solo se almeno una delle condizioni che la forma è vera. Il simbolo è ||.
+	Ad esempio "a==3 || a==4 || a==5" è vera se a è uguale a 3, a 4 O a 5.
 
 ## Switch
 Lo switch si usa per eseguire diverse istruzioni a seconda del valore di un'istruzione.
