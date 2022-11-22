@@ -1,0 +1,1 @@
+# Gli array (o vettori)
