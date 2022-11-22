@@ -18,11 +18,11 @@ Quindi se l'array ha 10 elementi, il primo avrà indice 0 e l'ultimo indice 9.
 Passiamo ora al codice: come si usa un array?
 Prima di tutto la dichiarazione. Ricordiamo che dichiarare una variabile significa "creare la scatola" che andrà a contenere i nostri valori.
 
-''C++
+```C++
 int vett1[10]; //creiamo un array di interi chiamato vett1 di 10 elementi
 int vett2[3] = {1,2,3}; //creiamo un array di interi chiamato vett2 di 3 elementi, che contiene i numeri 1,2,3
 char vett3[4] = {'a','b','c','d'}; //creiamo un array di caratteri chiamato vett3 di 4 elementi, che contiene i caratteri a,b,c,d
-''
+```
 NB: se nella dichiarazione non diciamo quali elementi ci sono dentro il vettore, come in vett1, saranno messi in automatico numeri a caso
 
 Più in generale:
@@ -35,7 +35,7 @@ Esiste un secondo metodo: usando le costanti.
 Cos'è una costante?
 Una costante è una variabile speciale, di cui si decide il valore quando viene dichiarata e non può più essere modificato.
 
-''C++
+```C++
 #include <bits/stdc++.h>
 #define MAX 100
 using namespace std;
@@ -43,7 +43,7 @@ using namespace std;
 int main(){
   int vett[MAX];
 }
-''
+```
 
 MAX è una costante che vale 100, quindi il nostro vettore ha 100 elementi.
 Di solito si scrivono i nomi delle costanti in maiuscolo. Non è obbligatorio ma è buona pratica per distinguerle dalle variabili normali.
@@ -62,7 +62,117 @@ Nessuna, ma usare le costanti è molto più consigliato. Immaginate di avere 20 
 Se avete scritto i numeri a mano, dovrete modificare tutte e 20 le dichiarazioni.
 Se avete usato la stessa costante MAX, basterà modificare il valore di MAX a inizio programma.
 
+ATTENZIONE!!!!
+Mai usare una variabile come dimensione del vettore.
+Questo è severamente proibito:
+```C++
+  int n = 20;
+  int vett[n];
+```
 
+### Accedere a un elemento
+
+Immaginiamo di avere un vettore vett di 10 interi:
+int vett[10]
+
+Primo elemento: vett[0]
+Secondo elemento: vett[1]
+...
+Decimo elemento: vett[9]
+
+Quindi per prendere in input il terzo elemento scrivo:
+cin >> vett[2];
+Per stampare il quarto elemento scrivo:
+cout << vett[3];
+
+### Iterazione su un vettore
+
+Vediamo il seguente programma che prende in input un vettore, con numero di elementi deciso dall'utente, e poi lo stampa.
+
+```C++
+#include <bits/stdc++.h>
+#define MAX 100
+using namespace std;
+
+int main(){
+  int n,i;
+  int vett[MAX];
+  
+  cout << "Quanti elementi vuoi inserire?";
+  cin >> n;
+  
+  //input
+  for(i=0;i<n;i++){ //ciclo che va da 0 a n-1, perchè la lunghezza del vettore è n
+    cin >> vett[i];
+  }
+  
+  //output
+  for(i=0;i<n;i++){
+    cout << vett[i];
+  }
+}
+```
+
+NB: se vogliamo essere sicuri che n sia minore di MAX e maggiore di 0, faremo un controllo sull'input, così:
+
+```C++
+#include <bits/stdc++.h>
+#define MAX 100
+using namespace std;
+
+int main(){
+  int n,i;
+  int vett[MAX];
+  
+  do{
+    cout << "Quanti elementi vuoi inserire?";
+    cin >> n;
+  } while(n<=0 || n>MAX);
+  
+  //input
+  for(i=0;i<n;i++){ //ciclo che va da 0 a n-1, perchè la lunghezza del vettore è n
+    cin >> vett[i];
+  }
+  
+  //output
+  for(i=0;i<n;i++){
+    cout << vett[i];
+  }
+}
+```
+
+## Per risolvere il nostro quesito della media
+```C++
+#include <bits/stdc++.h>
+#define MAX 100
+using namespace std;
+
+int main(){
+  int n,i;
+  int somma=0;
+  int vett[MAX];
+  
+  cout << "Quanti elementi vuoi inserire?";
+  cin >> n;
+  
+  for(i=0;i<n;i++){
+    cin >> vett[i];
+    somma = somma + vett[i];
+  }
+  
+  float media = (float)somma/n; //questa cosa si chiama cast, vedi la nota sotto al codice
+  int count = 0;
+  
+  for(i=0;i<n;i++){
+    if(vett[i]>media){
+      count++;
+    }
+  }
+  
+  cout << "Gli elementi maggiori della media sono " << cont;
+  
+ }
+```
 
 ## Esercizi
 1. Calcolare la somma di 10 elementi inseriti dall'utente (usare ciclo for), salvarli in un array e poi calcolarne la somma
