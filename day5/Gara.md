@@ -1,4 +1,5 @@
 # Problemi
+In ordine di difficoltà:
 - [array](https://training.olinfo.it/#/task/array/statement)
 - [easy3](https://training.olinfo.it/#/task/easy3/statement)
 - [quadrati](https://training.olinfo.it/#/task/quadrati/statement)
