@@ -53,7 +53,7 @@ int main(){
 			default:
 				cout << "Operazione non consentita\n";
 		}
-	}
+	} while(operazione!=5);
 	
 	cout << "FINE";
 	
