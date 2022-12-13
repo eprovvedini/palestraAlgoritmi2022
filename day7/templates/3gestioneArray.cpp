@@ -57,8 +57,6 @@ int main(){
 	
 	cout << "FINE";
 	
-	in.close();
-	out.close();
 	return 0;
 }
 
