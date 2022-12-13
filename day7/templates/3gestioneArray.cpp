@@ -5,17 +5,17 @@ using namespace std;
 int main(){
 	//Vogliamo creare un programma che permetta all'utente di gestire un'array facendo le seguenti operazioni:
 	//1. inserire un elemento alla fine dell'array
-	//Esempio: il mio array Ë {1,3,5}, se l'utente vuole inserire 7, l'array deve diventare {1,3,5,7}
-	//NB: se l'array Ë gi‡ pieno, non inserire nulla
+	//Esempio: il mio array √® {1,3,5}, se l'utente vuole inserire 7, l'array deve diventare {1,3,5,7}
+	//NB: se l'array √® gi√† pieno, non inserire nulla
 	
 	//2. inserire un elemento in una certa posizione dell'array, decisa dall'utente
-	//Esempio: il mio array Ë {1,3,5,7}
+	//Esempio: il mio array √® {1,3,5,7}
 	//L'utente vuole inserire 2 in posizione 2
 	//L'array deve diventare {1,3,2,5,7}
 	//Notare che abbiamo spostato 5 e 7 di un posto a destra
 	
 	//3. cancellare un elemento dall'array, senza lasciare "buchi"
-	//Esempio: l'array Ë {1,3,2,5,7}
+	//Esempio: l'array √® {1,3,2,5,7}
 	//Voglio cancellare l'elemento in posizione 4
 	//L'array deve diventare {1,3,2,7}
 	//Notare che abbiamo spostato il 7 di un posto a sinistra
@@ -39,7 +39,7 @@ int main(){
 	do{
 		cout << "Cosa vuoi fare?";
 		cin >> operazione;
-		switch{
+		switch (operazione){
 			case 1: //inserimento in coda
 				break;
 			case 2:
