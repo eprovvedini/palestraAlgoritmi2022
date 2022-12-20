@@ -9,7 +9,7 @@ Prenderemo in considerazione 3 casi:
 3. Variabile dichiarata dentro un blocco (ad esempio un ciclo o dentro un if)
 
 Facciamo un esempio per capire meglio:  
-''C++
+```C++
 int A = 10;
 
 int main(){
@@ -19,14 +19,14 @@ int main(){
     cout << C;
   }
 }
-''
+```
 
 In questo caso A è dichiarata prima del main. Viene detta <b>variabile globale</b>. A è visibile e utilizzabile in tutto il programma.  
 B è dichiarata all'interno del blocco main. Sarà visibile e utilizzabile solo nel main.  
 C è dichiarata all'interno dell'if. Sarà visibile e utilizzabile solo in quel blocco.  
 
 Proviamo infatti a stampare la variabile C dopo l'if:
-''C++
+```C++
 int A = 10;
 
 int main(){
@@ -37,12 +37,12 @@ int main(){
   }
   cout << C;
 }
-''
+```
 
 Cosa succede? Il vostro codice non compila, perchè la variabile C viene distrutta quando finisce il blocco in cui è stata creata.
 
 Cosa succede se dichiariamo una variabile all'interno di un ciclo for?
-''C++
+```C++
 int main(){
 	for(int i=0;i<10;i++) {
 		int somma = 0;
@@ -50,7 +50,7 @@ int main(){
 		cout << somma << " ";
 	}
 }
-''
+```
 
 Se provate ad eseguire questo codice, vedrete che somma è sempre 1. Perchè?  
 Ogni volta che rientro nel blocco del for, la variabile somma viene creata (dichiarata).  
@@ -69,40 +69,40 @@ Ci sono due istruzioni utili che potete usare all'interno di un ciclo.
 1. Break  
 Conclude il ciclo.  
 Ad esempio, dovete vedere se c'è un 4 all'interno di un array. Una volta che lo avete trovato, potete dire "sì, c'è" e smettere di controllare il resto dell'array.
-''C++
+```C++
 for(i=0;i<numElem;i++){
   if(vet[i]==4){
     cout << "Trovato";
     break;
   }
 }
-''
+```
 
 2. continue
 Va alla prossima esecuzione del ciclo. Meno usata del break, ma sappiate che esiste.
 
-''C++
+```C++
 for(i=0;i<numElem;i++){
   if(vet[i]%2==0){
     continue;
   }
   cout << "Dispari\n";
 }
-''
+```
 
 ## Piccola nota sulle parentesi graffe
 Sia nell'if, sia nel for, se all'interno delle graffe avete una sola istruzione, potete togliere le graffe.
 
-''C++
+```C++
 for(i=0;i<numElem;i++)
   cout << vet[i] << " ";
   
 for(i=0;i<numElem;i++){
   cout << vet[i] << " ";
 }
-''
+```
 I due for fanno la stessa identica cosa. Attenzione perchè questo non vale con più istruzioni.  
-''C++
+```C++
 for(i=0;i<numElem;i++)
   cout << vet[i] << " ";
   vet[i] = 2; //questa istruzione viene considerata fuori dal ciclo
@@ -111,7 +111,7 @@ for(i=0;i<numElem;i++){
   cout << vet[i] << " ";
   vet[i] = 2;
 }
-''
+```
 In questo caso invece i due for sono diversi.
 
 
