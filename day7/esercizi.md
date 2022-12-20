@@ -34,15 +34,25 @@ arr2 = {12, 7, 8, 10, 6}
 
 Creare un programma che
 - Inizializzi due array dal file di testo "input2.txt"
+
 Il file è così strutturato:
+
 Prima riga: n1 (numero di elementi del primo array, minore di 100)
+
 Seconda riga: n1 numeri (numeri da inserire nel primo array)
+
 Terza riga: n2 (numero di elementi del secondo array, minore di 100)
+
 Quarta riga: n2 numeri
+
 Esempio:
+
 4
+
 1 2 5 3
+
 7
+
 8 3 0 2 5 1 8
 
 - Crei un terzo array che sia la somma dei due array precedenti
