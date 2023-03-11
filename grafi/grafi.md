@@ -26,7 +26,8 @@ La matrice di adiacenza è una matrice in cui in ogni cella (x,y) viene messo:
 - se il grafo non è pesato: 1 se esiste un arco tra x e y, 0 se non esiste
 - se il grafo è pesato: il peso dell'arco tra x e y (-1 se non esiste)
 
-![vector](https://user-images.githubusercontent.com/94620199/224487998-609c8168-fbda-4ad7-99d5-65ce3f8cebdc.png) 
+![vector](https://user-images.githubusercontent.com/94620199/224488048-eb71018e-2995-4dc4-9085-4c8eb524c7b5.png) 
+
 
 Questo metodo in realtà è usato meno del secondo.  
 
@@ -39,7 +40,7 @@ Abbiamo il nostro vector iniziale. Possiamo immaginare che la posizione 0 sarà 
 Sappiamo che come elemento di un vector possiamo avere un altro vector (così come una matrice è semplicemente un vettore di vettori).
 Per ogni nodo avremmo quindi un vector alla sua posizione, che contiene i nodi a cui esso è collegato. Così potrebbe non risultare chiaro, quindi ecco un esempio grafico: 
 
-![matrice](https://user-images.githubusercontent.com/94620199/224488003-124f63a2-3428-4552-a63c-ef8c1bcdef87.png) 
+![matrice](https://user-images.githubusercontent.com/94620199/224488049-17bd62d1-c9a1-4298-aee0-22b828e5dc8b.png) 
 
 Il codice per implementare un grafo è in allegato.
 Consiglio di provare a risolvere Sunnydale sul sito delle olimpiadi. Tra qualche giorno carico come si fa la visita di un grafo e la soluzione.
