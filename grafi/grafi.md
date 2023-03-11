@@ -4,14 +4,15 @@ Un grafo è una struttura formata da:
 - nodi (o vertici)
 - archi: collegamenti tra i nodi
   
-//immagine grafo  
+![grafo](https://user-images.githubusercontent.com/94620199/224487842-6105521e-e89f-4b9d-afce-03c86859a5f8.png) 
 
 
 Un grafo può essere orientato, cioè ogni arco ha una direzione di percorrenza. Nell'esempio sotto, dal nodo 1 si può raggiungere il 2, ma dal nodo 2 non si può raggiungere l'1.  
-//immagine grafo orientato  
+![grafo_orientato](https://user-images.githubusercontent.com/94620199/224487864-1cff67f8-f44b-40d2-af33-7f88ccd1b3c5.png) 
+  
 
 Un grafo pesato è un grafo in cui a ogni arco è associato un "peso", cioè un valore numerico. Questo peso può significare tante cose. Se consideriamo i nodi come città, allora il peso potrebbe essere il numero di km tra una città e l'altra.  
-//immagine grafo pesato  
+![grafo_pesato](https://user-images.githubusercontent.com/94620199/224487867-a1d66cae-f097-48a3-b429-19a5c08899f3.png) 
 
 ## Rappresentazione in memoria
 
