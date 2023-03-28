@@ -11,7 +11,11 @@ Se il nodo 4 non ha vicini, si passa al vicino successivo di 1.
 Se 1 non ha vicini, si passa al prossimo vicino di 0, mettiamo 2.  
 Mettiamo che 2 non abbia vicini. Passiamo al prossimo vicino di 0, mettiamo 3.  
 Se 3 non ha vicini, abbiamo finito.  
-Anche in questo caso, una [gif](https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif?20090326120256) spiega meglio di mille parole.
+Anche in questo caso, una [gif](https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif?20090326120256) spiega meglio di mille parole.  
+
+Per implementare una bfs serve usare una coda. Consiglio di leggere [qui]() di cosa si tratta. Non è per nulla difficile. Puoi vederlo come un vettore che ha solo due operazioni:  
+- inserire un elemento in un lato
+- estrarre un elemento dall'altro lato
 
 In allegato il codice commentato, che è la cosa più importante.  
 Dopo averlo capito, consiglio alcuni esercizi di allenamento.  
